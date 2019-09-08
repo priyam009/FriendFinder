@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en-us">
   <head>
     <meta charset="utf-8" />
@@ -6,19 +7,21 @@
     <!-- Title -->
     <title>Friend Finder</title>
 
-    <!-- Responsive Website -->
+    <!-- Responsive Webpage -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Bootstrap -->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+    />
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="../css/reset.css">
-
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- Jquery -->
     <script
@@ -33,26 +36,31 @@
       rel="stylesheet"
     />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
   </head>
+
   <body>
-    <header class="container">
-      <div class="jumbotron text-center">
+    <div class="container-fluid">
+      <div class="jumbotron text-center custom-header">
         <h1 class="display-4">Friend Finder</h1>
         <hr class="my-4" />
-        <p class="lead">
+        <p class="lead pb-4">
           Answer a few basic questions.
         </p>
         <p>
           Then find the friend with the greatest compatibility!
         </p>
-        <p class="lead">
+        <p class="lead mt-4">
           <a class="btn btn-primary btn-lg" href="./survey.html" role="button"
             >Go to Survey</a
           >
         </p>
       </div>
-    </header>
+      
+      <div class="custom-header mt-2 footer-font">
+        <a class="text-dark" href="#">API Friends List</a>
+        <span>|</span>
+        <a class="text-dark" href="#">GitHub Repo</a>
+      </div>
+    </div>
   </body>
 </html>
