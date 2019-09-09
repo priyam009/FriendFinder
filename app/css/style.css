@@ -1,5 +1,7 @@
 body {
   font-family: 'Fira Code', monospace;
+  /* background-color: #42a689; */
+  background-image: url("../images/papyrus-dark.png")
 }
 
 .custom-header {
@@ -8,4 +10,9 @@ body {
 
 .footer-font {
   font-size: 14px;
+}
+
+.survey-header {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #e5b71a;
 }
