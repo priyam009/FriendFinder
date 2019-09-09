@@ -1,18 +1,29 @@
 body {
   font-family: 'Fira Code', monospace;
-  /* background-color: #42a689; */
-  background-image: url("../images/papyrus-dark.png")
+  background-color: #d9b310;
 }
 
-.custom-header {
-  margin: auto 100px;
+.home-header {
+  margin: auto 250px;
 }
 
 .footer-font {
   font-size: 14px;
+  color: #fff;
 }
 
 .survey-header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #e5b71a;
+}
+
+.custom-button {
+  background-color: #d9b310;
+  border-color: #d9b310;
+  color: #000;
+}
+
+.custom-button:hover {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
 }
