@@ -34,6 +34,54 @@ router.post('/friends', function(req, res) {
   }
 
   console.log("friend", friend);
-})
+
+  getfriend(friend.scores);
+});
+
+
+function getfriend(user) {
+
+  //Store totalDifference values
+  var finder = [];
+  
+  for(var i=0; i<friends.length; i++) {
+    var totalDifference = 0;
+    var other = friends[i].scores;
+
+    //Change Friends API scores to Integer
+    other = other.map(function(each) {
+      return parseInt(each);
+    })
+
+    //Change user score to Integer
+    user = user.map(function(each) {
+      return parseInt(each)
+    })
+
+    //Loop to calculate difference between 2 values at each index
+    for(var j=0; j<other.length; j++) {
+
+      //Difference between 2 values in an array
+      totalDifference += Math.abs(user[j] - other[j]);
+
+    }
+    //Add difference to finder list
+    finder.push(totalDifference);
+
+  }
+
+  var value = finder[0];
+  var index = 0;
+
+  for(var i=0; i<finder.length; i++) {
+    if (finder[i] < value) {
+      value = finder[i];
+      index = i;
+    }
+  }
+
+  console.log("finder", finder);
+  console.log("new friend", friends[index].name);
+}
 
 module.exports = router;
