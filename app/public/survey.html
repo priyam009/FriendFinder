@@ -201,8 +201,46 @@
             </div>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary w-100 mt-4 custom-button">Submit</button>
+        <button
+          type="submit"
+          id="submit"
+          class="btn btn-primary mt-4 custom-button"
+        >
+          Submit
+        </button>
       </form>
     </div>
+
+    <script>
+      $("#submit").on("click", function() {
+        event.preventDefault();
+
+        var information = {
+          firstName: $("#firstName").val(),
+          lastName: $("#lastName").val(),
+          answers: [
+            $("#question1").val(),
+            $("#question2").val(),
+            $("#question3").val(),
+            $("#question4").val(),
+            $("#question5").val(),
+            $("#question6").val(),
+            $("#question7").val(),
+            $("#question8").val(),
+            $("#question9").val(),
+            $("#question10").val()
+          ]
+        };
+
+        $.ajax({
+          url: "/api/friends",
+          type: "POST",
+          contentType: "application/json",
+          data: JSON.stringify(information)
+        });
+
+        console.log(information);
+      });
+    </script>
   </body>
 </html>
