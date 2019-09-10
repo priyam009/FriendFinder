@@ -4,7 +4,7 @@ body {
 }
 
 .home-header {
-  margin: auto 250px;
+  margin: auto 100px;
 }
 
 .footer-font {
@@ -23,7 +23,7 @@ body {
 }
 
 .custom-button:hover {
-  background-color: #000;
+  background-color: #fff;
   border-color: #000;
-  color: #fff;
+  color: #000;
 }
