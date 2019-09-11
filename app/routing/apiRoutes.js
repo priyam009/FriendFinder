@@ -35,8 +35,10 @@ router.post('/friends', function(req, res) {
 
   console.log("friend", friend);
 
+  //Get best matching friend
   var chosen = getFriend(friend.scores);
 
+  //Return response JSON
   res.json(chosen);
 });
 
@@ -46,10 +48,12 @@ function getFriend(user) {
   //Store totalDifference values
   var finder = [];
   
+  //Loop through each potential friend
   for(var i=0; i<friends.length; i++) {
     var totalDifference = 0;
     var other = friends[i].scores;
 
+    //Change the values from string to integer
     other = getInteger(other);
     user = getInteger(user);
 
@@ -58,11 +62,15 @@ function getFriend(user) {
       //Difference between 2 values in an array
       totalDifference += Math.abs(user[j] - other[j]);
     }
+
+    //Push the difference for each potential friend in array finder
     finder.push(totalDifference);
   }
 
+  //Get index of the matching friend
   var index = friendFinder(finder);
 
+  //Return object for the matching friend
   return friends[index];
 }
 
