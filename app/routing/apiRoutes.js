@@ -15,7 +15,7 @@ router.post('/friends', function(req, res) {
   var data = req.body;
 
   //Assigning dummy photo
-  var photoArr = ["http://placekitten.com/g/200/300", "https://dog.ceo/api/breeds/image/random"];
+  var photoArr = ["http://placekitten.com/g/200/300", "https://loremflickr.com/320/240/dog"];
 
   var photo = photoArr[Math.floor(Math.random(photoArr) * 2)];
 

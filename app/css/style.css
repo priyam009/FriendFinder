@@ -28,25 +28,4 @@ body {
   color: #000;
 }
 
-.modal {
-  width: 600px;
-  height: 500px;
-  display: none;
-  top: 200px;
-  left: 50%;
-  overflow: auto;
-  transform: translate(-50%, -50%);
-  background-color: #000;
-  color: #fff;
-}
-
-.answer-name {
-  text-align: center;
-  font-size: 23px;
-}
-
-.answer-photo {
-  height: 400px;
-  width: 600px;
-}
 
