@@ -9,19 +9,19 @@
 
     <!-- Responsive Webpage -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- Bootstrap -->
     <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
     />
 
     <!-- Reset CSS -->
-    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css" />
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
 
     <!-- Jquery -->
     <script
@@ -36,12 +36,14 @@
       rel="stylesheet"
     />
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f1172acf77.js"></script>
   </head>
 
   <body>
     <div class="container-fluid mt-5">
       <div class="jumbotron text-center home-header">
-        <h1 class="display-4">Friend Finder</h1>
+        <h1 class="display-4"><i class="fas fa-anchor fas-anchor"></i> Friend Finder</h1>
         <hr class="my-4" />
         <p class="lead pb-4">
           Answer a few basic questions.
@@ -50,18 +52,26 @@
           Then find the friend with the greatest compatibility!
         </p>
         <p class="lead mt-4">
-          <a class="btn btn-primary btn-lg custom-button" href="./survey" role="button"
-            >Go to Survey</a
+          <a
+            class="btn btn-primary btn-lg custom-button"
+            href="./survey"
+            role="button"
+            >Go to Survey <i class="fas fa-align-justify"></i></a
           >
         </p>
-        
       </div>
-        <div class="home-header mt-2 footer-font">
-          <a class="text-dark" id="apiList" href="/api/friends">API Friends List</a>
-          <span>|</span>
-          <a class="text-dark" target="_blank" href="https://github.com/priyam009/FriendFinder">GitHub Repo</a>
-        </div>
+      <div class="home-header mt-2 footer-font">
+        <a class="text-dark" id="apiList" href="/api/friends"
+          >API Friends List</a
+        >
+        <span>|</span>
+        <a
+          class="text-dark"
+          target="_blank"
+          href="https://github.com/priyam009/FriendFinder"
+          >GitHub Repo</a
+        >
+      </div>
     </div>
-
   </body>
 </html>
