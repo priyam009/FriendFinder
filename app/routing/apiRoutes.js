@@ -1,6 +1,5 @@
 var express = require('express');
 var friends = require('../data/friends');
-var fs = require('fs');
 
 var router = express.Router();
 
