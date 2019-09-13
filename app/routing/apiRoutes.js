@@ -1,5 +1,6 @@
 var express = require('express');
 var friends = require('../data/friends');
+var fs = require('fs');
 
 var router = express.Router();
 
@@ -33,7 +34,7 @@ router.post('/friends', function(req, res) {
     scores: data.answers
   }
 
-  console.log("friend", friend);
+  // console.log("friend", friend);
 
   //Get best matching friend
   var chosen = getFriend(friend.scores);
